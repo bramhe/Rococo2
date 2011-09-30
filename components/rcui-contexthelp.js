@@ -7,8 +7,12 @@ UI.components.ContextHelp = {
 		var $node = n;
 
 		obj.init = function(){
-			$('body').click(function(e){
-				$target = $(e.target);
+
+			var $target;
+			var updateHelpTexts = function(){
+				if ($target.hasClass('clearhelptext')) {
+					return $node.hide();
+				}
 				if (!$target.is('a') && !$target.is('.tab')) return;
 				var $contextHelp = null;
 				if ($target.attr('data-contexthelp')) {
@@ -28,7 +32,13 @@ UI.components.ContextHelp = {
 				else {
 					$node.hide();
 				}
+			}
+
+			$('body').click(function(e){
+				$target = $(e.target);
+				updateHelpTexts();
 			});
+
 			var d = obj._get('default');
 			if (d) {
 				var $contextHelp = $('#'+d);
