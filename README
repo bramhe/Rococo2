@@ -1,0 +1,20 @@
+# Rococo 2
+Rococo 2 is a micro framework for Javascript Application Development based on JQuery. Rococo 2 is a micro framework for using component oriented techniques with custom designed, complex HTML structures.
+
+## Features
+
+* No more glue code
+* Clean Javascript Application Architecture for use with JQuery
+* Create reusable components without sacrificing custom HTML designs
+
+## Philosophy
+
+Once upon a time we were building a new Javascript Application. We were searching for an adequate GUI framework to speed up Javascript development. However none of the existing GUI frameworks (EXT, Cappuccino or SproutCore) was accepted by our design team. Instead our designers insisted on crafting their own unique user experience. As a consequence we started to design UI components together with our design team to create our own Javascript Application GUI. However we noticed our designs could not be forced into strict component guidelines. Instead our designers always wanted something different in the HTML of a component leading to excessively difficult code. So, after a while we took have chosen for a different approach. We simply build a system that could connect HTML structures to Javascript Components. While these components add all basic behaviours to our HTML that can easily be reused in other applications the components frequently call delegate methods to add custom behaviour or add custom design elements. This is what Rococo does and it really works for us. We have been able to deliver custom enterprise web applications in time thanks to Rococo. Hopefully you can benefit from Rococo as well, this is why we like to share our code. Rococo is licensed LGPL.
+
+## Components
+
+At the time of writing we also have some components but these have been evolved from Rococo1 and are not yet compatible with Rococo2. Furthermore Rococo2 is a micro framework for component oriented applications, not a set of components. This means that we will offer components as plugins instead of integral parts of the core. Even without components though, Rococo is an extremely powerful tool.
+
+
+
+ 
