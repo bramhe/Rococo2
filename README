@@ -28,7 +28,8 @@ the components frequently call delegate methods to add custom behaviour or add c
 This is what Rococo does and it really works for us. We have been able to deliver custom enterprise web applications in time thanks to Rococo. 
 Hopefully you can benefit from Rococo as well, this is why we like to share our code. Rococo is licensed LGPL.
 
-## Components
+Components
+==========
 
 At the time of writing we also have some components but these have been evolved from Rococo1 and are not yet compatible with Rococo2. 
 Furthermore Rococo2 is a micro framework for component oriented applications, not a set of components. 
