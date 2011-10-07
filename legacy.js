@@ -110,13 +110,17 @@ Legacy = {
 		 * Applies the datapicker (standard jQuery Date picker plugin)
 		 */
 		applyDatePickers: function() { if (!$.datepicker) return;
-			$(".date").datepicker({
-				"dateFormat":"yy-mm-dd",
-				"minDate":(new Date()),
-				"buttonImage":"/static/source/shared/img/calendar.gif",
-		 		showOn: "button",
-				buttonImageOnly: true
+			$("input.date").each(function() {
 				
+				var minDate = new Date($(this).attr('data-minDate'));
+				
+				$(this).datepicker({
+					"dateFormat":"yy-mm-dd",
+					"minDate": minDate,
+					"buttonImage":"/static/source/shared/img/calendar.gif",
+			 		showOn: "button",
+					buttonImageOnly: true
+				});
 			});
 		}
 	},
