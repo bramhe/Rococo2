@@ -1,4 +1,6 @@
-
+/**
+ * Rococo2 Component Class: NotificationCenter
+ */
 UI.components.NotificationCenter = {
 	getInstance: function(){
 		var _createNew = function() {

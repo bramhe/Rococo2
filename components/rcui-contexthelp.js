@@ -1,4 +1,7 @@
-
+/**
+ * Rococo2 Component Class: ContextHelp
+ * Defines logic for contextual help functionality.
+ */
 UI.components.ContextHelp = {
 	createNew: function(n) {
 		var obj = {};
