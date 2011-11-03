@@ -10,7 +10,7 @@ UI = {
 			var c = UI.components[comp].createNew( $(this) );
 			if (!c) throw('Invalid createNew() function on '+comp+', should return object! ');
 			c.$node = $(this);
-			c.$nodes = $(this).add( $(".connected[data-belongsto="+$(this).attr("id")+"]") );
+			c.$nodes = $(this).add( $(".connected[data-belongsto\"="+$(this).attr("id")+"\"]") );
 			var cfg = [];
 			c.$nodes.each(function(){
 				if ($(this).attr('data-config')) {
